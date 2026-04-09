@@ -1,0 +1,98 @@
+[2026-04-09 22:19:22] Task created by user: mangeshnimbalkar1972@gmail.com
+[2026-04-09 22:19:22] Ticker: AAPL, Company: AAPL
+[2026-04-09 22:19:22] Starting analysis pipeline...
+[2026-04-09 22:19:22] Executing: C:\Users\lenovo\AppData\Local\Programs\Python\Python311\python.exe C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\src\generate_financial_analysis.py --company-ticker AAPL --company-name AAPL --years-limit 5 --revenue-growth-2025 0.05 --revenue-growth-2026 0.06 --revenue-growth-2027 0.04 --margin-improvement 0.01 --output-dir C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis --generate-text-sections --enable-sensitivity-analysis --enable-catalyst-analysis --enable-enhanced-news --config-file C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\config\config.ini
+[2026-04-09 22:19:30] Output will be saved to: C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis
+[2026-04-09 22:19:30] Text outputs will be saved to: C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis
+[2026-04-09 22:19:30] Using OpenAI base URL: https://api.openai.com/v1
+[2026-04-09 22:19:30] Using model: gpt-4.1
+[2026-04-09 22:19:30] Starting FMP API-based financial analysis for AAPL (AAPL)
+[2026-04-09 22:19:30] Fetching financial data from FMP API...
+[2026-04-09 22:19:30] Fetching comprehensive financial data for AAPL...
+[2026-04-09 22:19:30] Error fetching FMP income statement for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&limit=5&apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:30] Error fetching FMP balance sheet for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v3/balance-sheet-statement/AAPL?period=annual&limit=5&apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:30] Error fetching FMP cash flow for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v3/cash-flow-statement/AAPL?period=annual&limit=5&apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:30] Error fetching FMP ratios/key metrics for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v3/ratios/AAPL?period=annual&limit=5&apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:30] Error: Could not fetch income statement data from FMP API. Exiting.
+[2026-04-09 22:19:30] Please check:
+[2026-04-09 22:19:30] 1. FMP API key is valid and has remaining quota
+[2026-04-09 22:19:30] 2. Ticker symbol is correct
+[2026-04-09 22:19:30] 3. Internet connection is working
+[2026-04-09 22:19:31] Executing: C:\Users\lenovo\AppData\Local\Programs\Python\Python311\python.exe C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\src\create_equity_report.py --company-ticker AAPL --company-name AAPL --analysis-csv C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis\financial_metrics_and_forecasts.csv --ratios-csv C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis\ratios_raw_data.csv --tagline-file C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis\tagline.txt --company-overview-file C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis\company_overview.txt --investment-overview-file C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis\investment_overview.txt --valuation-overview-file C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis\valuation_overview.txt --risks-file C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis\risks.txt --competitor-analysis-file C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis\competitor_analysis.txt --major-takeaways-file C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis\major_takeaways.txt --output-dir C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\report --config-file C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\config\config.ini --enable-text-regeneration --enable-enhanced-charts
+[2026-04-09 22:19:43] HTML reports will be saved to: C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\report
+[2026-04-09 22:19:43] ✅ OpenAI API key loaded for text regeneration
+[2026-04-09 22:19:43] Auto-fetching market data for AAPL...
+[2026-04-09 22:19:43] Fetching comprehensive company metrics for AAPL...
+[2026-04-09 22:19:43] Error fetching FMP current price for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v3/quote-short/AAPL?apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:43] Error fetching FMP target price for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v4/price-target?symbol=AAPL&apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:43] Error fetching FMP analyst rating for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v4/upgrades-downgrades?symbol=AAPL&apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:43] Error fetching company profile for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v3/profile/AAPL?apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:43] Warning: Could not fetch quote data: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v3/quote/AAPL?apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:43] Error fetching FMP ratios/key metrics for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v3/ratios/AAPL?period=annual&limit=1&apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:43] Successfully fetched metrics for AAPL
+[2026-04-09 22:19:43] ✅ Successfully auto-fetched market data
+[2026-04-09 22:19:43] 
+[2026-04-09 22:19:43] 📊 Market Data Summary for AAPL:
+[2026-04-09 22:19:43] Share Price: 0.0 (auto-fetched)
+[2026-04-09 22:19:43] Target Price: 0.0 (auto-fetched)
+[2026-04-09 22:19:43] Rating: N/A (auto-fetched)
+[2026-04-09 22:19:43] Market Cap: 0.0 (auto-fetched)
+[2026-04-09 22:19:43] Sector: Technology (auto-fetched)
+[2026-04-09 22:19:43] Error: Analysis CSV file not found at C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis\financial_metrics_and_forecasts.csv
+[2026-04-09 22:19:43] Error: Could not load analysis CSV file
+[2026-04-09 22:19:43] Generating PDF report...
+[2026-04-09 22:19:43] Executing: C:\Users\lenovo\AppData\Local\Programs\Python\Python311\python.exe C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\src\generate_pdf_report.py --company-ticker AAPL --company-name AAPL --analysis-dir C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis --output-dir C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\report --config-file C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\config\config.ini
+[2026-04-09 22:19:56] 
+[2026-04-09 22:19:56] ============================================================
+[2026-04-09 22:19:56] 📄 PROFESSIONAL EQUITY RESEARCH PDF GENERATOR
+[2026-04-09 22:19:56] ============================================================
+[2026-04-09 22:19:56] Company: AAPL (AAPL)
+[2026-04-09 22:19:56] Analysis Dir: C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis
+[2026-04-09 22:19:56] Output Dir: C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\report
+[2026-04-09 22:19:56] ============================================================
+[2026-04-09 22:19:56] 
+[2026-04-09 22:19:56] 📥 Loading analysis data...
+[2026-04-09 22:19:56] ⚠️ Financial metrics CSV not found: C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\analysis\financial_metrics_and_forecasts.csv
+[2026-04-09 22:19:56] ⚠️ tagline.txt not found
+[2026-04-09 22:19:56] ⚠️ company_overview.txt not found
+[2026-04-09 22:19:56] ⚠️ investment_overview.txt not found
+[2026-04-09 22:19:56] ⚠️ valuation_overview.txt not found
+[2026-04-09 22:19:56] ⚠️ risks.txt not found
+[2026-04-09 22:19:56] ⚠️ competitor_analysis.txt not found
+[2026-04-09 22:19:56] ⚠️ major_takeaways.txt not found
+[2026-04-09 22:19:56] ⚠️ news_summary.txt not found
+[2026-04-09 22:19:56] 📊 Fetching market data for AAPL...
+[2026-04-09 22:19:56] Fetching comprehensive company metrics for AAPL...
+[2026-04-09 22:19:56] Error fetching FMP current price for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v3/quote-short/AAPL?apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:56] Error fetching FMP target price for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v4/price-target?symbol=AAPL&apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:56] Error fetching FMP analyst rating for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v4/upgrades-downgrades?symbol=AAPL&apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:56] Error fetching company profile for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v3/profile/AAPL?apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:56] Warning: Could not fetch quote data: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v3/quote/AAPL?apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:56] Error fetching FMP ratios/key metrics for AAPL: 401 Client Error: Unauthorized for url: https://financialmodelingprep.com/api/v3/ratios/AAPL?period=annual&limit=1&apikey=YOUR_FMP_API_KEY
+[2026-04-09 22:19:56] Successfully fetched metrics for AAPL
+[2026-04-09 22:19:56] ✅ Successfully fetched market data
+[2026-04-09 22:19:56] 
+[2026-04-09 22:19:56] 📊 Generating charts...
+[2026-04-09 22:19:56] Warning: Analysis data is empty or missing 'metrics' column for revenue/EBITDA chart.
+[2026-04-09 22:19:56] Warning: Analysis data is empty or missing 'metrics' column for EPS × PE chart.
+[2026-04-09 22:19:56] Generating advanced charts...
+[2026-04-09 22:19:56] 
+[2026-04-09 22:19:56] 📋 Preparing financial tables...
+[2026-04-09 22:19:56] 
+[2026-04-09 22:19:56] 📝 Assembling report data...
+[2026-04-09 22:19:56] 📊 Derived rating: N/A (API: N/A)
+[2026-04-09 22:19:56] 
+[2026-04-09 22:19:56] 📄 Generating Professional PDF report...
+[2026-04-09 22:19:56] 📄 Building professional equity report...
+[2026-04-09 22:19:56] ✅ Professional report generated: C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\report\Professional_Equity_Report_AAPL.pdf
+[2026-04-09 22:19:56] 
+[2026-04-09 22:19:56] ============================================================
+[2026-04-09 22:19:56] ✅ PROFESSIONAL PDF REPORT GENERATED!
+[2026-04-09 22:19:56] ============================================================
+[2026-04-09 22:19:56] 📁 Output: C:\Users\lenovo\OneDrive\Desktop\New folder (2)\finrobot_equity\core\output\AAPL\report\Professional_Equity_Report_AAPL.pdf
+[2026-04-09 22:19:56] 📊 Dynamic pages based on content
+[2026-04-09 22:19:56] 📈 Charts: 0
+[2026-04-09 22:19:56] 💼 Investment Bank Style Report
+[2026-04-09 22:19:56] ============================================================
+[2026-04-09 22:19:56] 
+[2026-04-09 22:19:56] Pipeline completed successfully!
